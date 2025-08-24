@@ -1,11 +1,13 @@
 import './App.css';
 import Provider from 'provider';
+import {Landing} from "./Landing.tsx";
 
 const App = () => {
   return (
-    <div className="content">
-      <Provider />
-    </div>
+      <Landing/>
+    // <div className="content">
+    //   <Provider />
+    // </div>
   );
 };
 
