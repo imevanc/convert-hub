@@ -1,3 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --max-width-8xl: 96rem;
+  --max-width-9xl: 112rem;
+  --max-width-10xl: 128rem;
+}
+
 body {
   margin: 0;
   color: #fff;
