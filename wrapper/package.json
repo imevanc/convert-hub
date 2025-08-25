@@ -5,7 +5,9 @@
   "scripts": {
     "dev": "rsbuild dev --open",
     "build": "rsbuild build",
-    "preview": "rsbuild preview"
+    "preview": "rsbuild preview",
+    "prettier:fix": "prettier --write \"**/*.{ts,tsx}\"",
+    "prettier": "prettier --check \"**/*.{ts,tsx}\""
   },
   "dependencies": {
     "@tailwindcss/postcss": "^4.1.12",
