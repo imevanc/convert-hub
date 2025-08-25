@@ -1,0 +1,37 @@
+import {
+    Cloud,
+    Code,
+    Cpu,
+    Database,
+    FileText,
+    Globe,
+    Image,
+    Music,
+    Palette,
+    Shield,
+    Smartphone,
+    Star,
+    Terminal,
+    TrendingUp,
+    Video,
+    Zap
+} from "lucide-react";
+
+export const ALL_TOOLS = [
+    { id: 1, name: 'PDF Converter', icon: FileText, description: 'Convert documents to and from PDF format', color: 'green' },
+    { id: 2, name: 'Image Converter', icon: Image, description: 'Transform images between different formats', color: 'blue' },
+    { id: 3, name: 'Video Converter', icon: Video, description: 'Convert video files to various formats', color: 'green' },
+    { id: 4, name: 'Audio Converter', icon: Music, description: 'Transform audio files and formats', color: 'blue' },
+    { id: 5, name: 'Code Formatter', icon: Code, description: 'Format and convert code between languages', color: 'green' },
+    { id: 6, name: 'Database Export', icon: Database, description: 'Export data in multiple formats', color: 'blue' },
+    { id: 7, name: 'Web Scraper', icon: Globe, description: 'Extract and convert web data', color: 'green' },
+    { id: 8, name: 'Encryption Tool', icon: Shield, description: 'Secure file conversion and encryption', color: 'blue' },
+    { id: 9, name: 'API Converter', icon: Cpu, description: 'Transform API responses and data', color: 'green' },
+    { id: 10, name: 'Color Palette', icon: Palette, description: 'Convert between color formats', color: 'blue' },
+    { id: 11, name: 'Terminal Export', icon: Terminal, description: 'Command line data conversion', color: 'green' },
+    { id: 12, name: 'Mobile Optimizer', icon: Smartphone, description: 'Optimize files for mobile devices', color: 'blue' },
+    { id: 13, name: 'Cloud Sync', icon: Cloud, description: 'Convert and sync to cloud storage', color: 'green' },
+    { id: 14, name: 'Batch Processor', icon: Zap, description: 'Convert multiple files simultaneously', color: 'blue' },
+    { id: 15, name: 'QR Generator', icon: Star, description: 'Generate QR codes from various inputs', color: 'green' },
+    { id: 16, name: 'Analytics Export', icon: TrendingUp, description: 'Export analytics in different formats', color: 'blue' }
+];
