@@ -16,8 +16,9 @@ import {
   Video,
   Zap,
 } from "lucide-react";
+import { Tool } from "../types";
 
-export const ALL_TOOLS = [
+export const ALL_TOOLS: Array<Tool> = [
   {
     id: 1,
     name: "PDF Converter",

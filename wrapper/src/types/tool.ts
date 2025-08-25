@@ -1,9 +1,9 @@
-import { FC } from "react";
+import { LucideIcon } from "lucide-react";
 
 export type Tool = {
   id: number;
   name: string;
-  icon: FC<{ className?: string }>;
+  icon: LucideIcon;
   description: string;
   color: "green" | "blue";
 };
