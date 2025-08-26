@@ -10,7 +10,7 @@ export const Header = ({
   <header
     className={`${darkMode ? "bg-gray-900 border-gray-800" : "bg-white border-gray-200"} border-b sticky top-0 z-50 backdrop-blur-sm bg-opacity-90`}
   >
-    <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
       <div className="flex items-center justify-between h-16">
         <div className="flex items-center space-x-2">
           <div className="w-8 h-8 bg-green-600 rounded-lg flex items-center justify-center">
