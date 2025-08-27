@@ -4,9 +4,14 @@ import { ALL_TOOLS, POPULAR_TOOLS } from "../constants";
 import { Footer, Header, ToolTile } from "../components";
 
 export const Landing = () => {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
+  const savedTheme = localStorage.getItem("theme")?.toString();
+  const isDarkTheme = savedTheme === "dark";
+  const [darkMode, setDarkMode] = useState<boolean>(isDarkTheme);
 
-  const toggleTheme = () => setDarkMode(!darkMode);
+  const toggleTheme = () => {
+    localStorage?.setItem("theme", darkMode ? "dark" : "light");
+    setDarkMode(!darkMode);
+  };
 
   return (
     <div
