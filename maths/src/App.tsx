@@ -1,12 +1,8 @@
-import './App.css';
-import Provider from './components/ProviderComponent';
+import "./App.css";
+import { Router } from "./components";
 
 const App = () => {
-  return (
-    <div className="content">
-      <Provider />
-    </div>
-  );
+  return <Router />;
 };
 
 export default App;

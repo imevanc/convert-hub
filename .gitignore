@@ -36,5 +36,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-
+maths/dist/*
+maths/dist/.*
+maths/dist/@*
 .idea
