@@ -23,16 +23,16 @@ export const Landing = () => {
           ></div>
           <div className="relative max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6">
-              Convert <span className="text-green-600">Anything</span>
+              Calculate <span className="text-green-600">Anything</span>
             </h1>
             <p
               className={`text-xl md:text-2xl mb-8 max-w-3xl mx-auto ${darkMode ? "text-gray-300" : "text-gray-600"}`}
             >
-              Your one-stop solution for all file conversions. Fast, secure, and
-              reliable conversion tools for every need.
+              Your one-stop solution for all calculations. Fast, accurate, and
+              reliable calculation tools for every need.
             </p>
             <button className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300">
-              Start Converting Now
+              Start Calculating Now
             </button>
           </div>
         </section>
@@ -40,11 +40,11 @@ export const Landing = () => {
         <section id="tools" className="py-20" data-testid="all-tools-section">
           <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-4xl font-bold mb-4">All Conversion Tools</h2>
+              <h2 className="text-4xl font-bold mb-4">All Calculation Tools</h2>
               <p
                 className={`text-xl ${darkMode ? "text-gray-300" : "text-gray-600"}`}
               >
-                Discover our complete suite of conversion utilities
+                Discover our complete suite of calculation utilities
               </p>
             </div>
 
@@ -66,13 +66,14 @@ export const Landing = () => {
             <p
               className={`text-lg mb-8 leading-relaxed ${darkMode ? "text-gray-300" : "text-gray-600"}`}
             >
-              ConvertHub is your trusted partner for all digital conversion
-              needs. We believe in making file conversion simple, fast, and
-              accessible to everyone. Our platform combines cutting-edge
-              technology with user-friendly design to deliver the best
-              conversion experience possible. Whether you're a professional
-              handling large volumes of data or an individual with occasional
-              conversion needs, ConvertHub has the right tools for you.
+              ConvertHub is your trusted partner for all computational needs. We
+              believe in making calculations simple, fast, and accessible to
+              everyone. Our platform combines cutting-edge algorithms with
+              user-friendly design to deliver the best calculation experience
+              possible. Whether you're a student working on assignments, a
+              professional handling complex computations, or someone with
+              everyday calculation needs, ConvertHub has the right tools for
+              you.
             </p>
             <button
               onClick={() => window.open("/about", "_blank")}
@@ -95,7 +96,7 @@ export const Landing = () => {
               <p
                 className={`text-xl ${darkMode ? "text-gray-300" : "text-gray-600"}`}
               >
-                Our community's favorite conversion tools
+                Our community's favorite calculation tools
               </p>
             </div>
 

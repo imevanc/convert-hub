@@ -1,5 +1,6 @@
 import { Heart } from "lucide-react";
 import { Tool } from "../types";
+import { useNavigate } from "react-router";
 
 export const ToolTile = ({
   tool,
@@ -10,6 +11,7 @@ export const ToolTile = ({
   isPopular?: boolean;
   darkMode: boolean;
 }) => {
+  const navigate = useNavigate();
   const Icon = tool.icon;
   const bgColor = tool.color === "green" ? "bg-green-600" : "bg-blue-600";
 
@@ -21,6 +23,7 @@ export const ToolTile = ({
         rounded-xl p-6 transition-all duration-300 hover:shadow-xl hover:scale-105 cursor-pointer group
         ${isPopular ? "ring-2 ring-green-500 ring-opacity-50" : ""}
       `}
+      onClick={() => navigate(`/${tool.name.toLowerCase()}`)}
     >
       <div
         className={`w-12 h-12 rounded-lg ${bgColor} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform`}
