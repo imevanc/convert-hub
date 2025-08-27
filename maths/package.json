@@ -3,20 +3,23 @@
   "private": true,
   "version": "1.0.0",
   "scripts": {
-    "dev": "rsbuild dev --open",
-    "build": "rsbuild build",
+    "dev:standalone": "REACT_APP_STANDALONE=true rsbuild dev",
+    "build:standalone": "REACT_APP_STANDALONE=true rsbuild build",
+    "dev:federated": "rsbuild dev",
+    "build:federated": "rsbuild build",
     "preview": "rsbuild preview"
   },
   "dependencies": {
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "react-router": "^7.8.2"
   },
   "devDependencies": {
+    "@module-federation/rsbuild-plugin": "^0.18.3",
     "@rsbuild/core": "^1.2.15",
     "@rsbuild/plugin-react": "^1.1.1",
     "@types/react": "^19.0.0",
     "@types/react-dom": "~19.1.0",
-    "typescript": "^5.7.2",
-    "@module-federation/rsbuild-plugin":"^0.18.3"
+    "typescript": "^5.7.2"
   }
 }

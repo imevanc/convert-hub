@@ -2,7 +2,7 @@ import { BrowserRouter, Navigate, Route, Routes } from "react-router";
 import { Suspense } from "react";
 import { LoadingSpinner } from "./LoadingSpinner.tsx";
 import { Landing } from "../routes/Landing.tsx";
-import Provider from "maths";
+import MathsApp from "maths";
 
 export const Router = () => (
   <BrowserRouter>
@@ -22,7 +22,7 @@ export const Router = () => (
           <Suspense
             fallback={<LoadingSpinner message="Loading workspace..." />}
           >
-            <Provider />
+            <MathsApp />
           </Suspense>
         }
       />

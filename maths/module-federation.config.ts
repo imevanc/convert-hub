@@ -1,12 +1,13 @@
-import { createModuleFederationConfig } from '@module-federation/rsbuild-plugin';
+import { createModuleFederationConfig } from "@module-federation/rsbuild-plugin";
 
 export default createModuleFederationConfig({
-  name: 'maths',
+  name: "maths",
   exposes: {
-    '.': './src/components/ProviderComponent.tsx',
+    ".": "./src/App.tsx",
   },
   shared: {
     react: { singleton: true },
-    'react-dom': { singleton: true },
+    "react-dom": { singleton: true },
+    "react-router": { singleton: true },
   },
 });
