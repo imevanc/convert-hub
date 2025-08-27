@@ -1,10 +1,9 @@
-import './App.css';
-import Provider from 'provider';
-import {Landing} from "./Landing.tsx";
+import "./App.css";
+import { Router } from "./components";
 
 const App = () => {
   return (
-      <Landing/>
+    <Router />
     // <div className="content">
     //   <Provider />
     // </div>
