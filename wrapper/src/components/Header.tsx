@@ -19,7 +19,7 @@ export const Header = ({
           <span className="text-xl font-bold text-green-600">ConvertHub</span>
         </div>
 
-        <nav className="hidden md:flex space-x-8">
+        <nav className="hidden md:flex space-x-8 md:text-lg lg:text-xl">
           <a
             href="#tools"
             className={`transition-colors ${darkMode ? "text-gray-300 hover:text-white" : "text-gray-600 hover:text-gray-900"}`}

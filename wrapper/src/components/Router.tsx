@@ -1,8 +1,9 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router";
 import { Suspense } from "react";
-import { LoadingSpinner } from "./LoadingSpinner.tsx";
-import { Landing } from "../routes/Landing.tsx";
 import MathsApp from "maths";
+import { LoadingSpinner } from "./LoadingSpinner";
+import { ErrorPage, Landing } from "../routes";
+import { FederatedErrorBoundary } from "./FederatedErrorBoundary";
 
 export const Router = () => (
   <BrowserRouter>
@@ -19,16 +20,21 @@ export const Router = () => (
       <Route
         path="/maths/*"
         element={
-          <Suspense
-            fallback={<LoadingSpinner message="Loading workspace..." />}
-          >
-            <MathsApp />
-          </Suspense>
+          <FederatedErrorBoundary>
+            <Suspense
+              fallback={<LoadingSpinner message="Loading workspace..." />}
+            >
+              <MathsApp />
+            </Suspense>
+          </FederatedErrorBoundary>
         }
       />
 
       <Route path="/maths" element={<Navigate to="/maths/home" replace />} />
       <Route path="/" element={<Navigate to="/" replace />} />
+
+      <Route path="/error" element={<ErrorPage />} />
+      <Route path="*" element={<ErrorPage type="404" />} />
     </Routes>
   </BrowserRouter>
 );
