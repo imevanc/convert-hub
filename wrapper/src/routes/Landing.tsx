@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ArrowRight } from "lucide-react";
-import { ALL_TOOLS, POPULAR_TOOLS } from "./constants";
-import { Footer, Header, ToolTile } from "./components";
+import { ALL_TOOLS, POPULAR_TOOLS } from "../constants";
+import { Footer, Header, ToolTile } from "../components";
 
 export const Landing = () => {
   const [darkMode, setDarkMode] = useState<boolean>(false);
@@ -14,8 +14,10 @@ export const Landing = () => {
     >
       <Header darkMode={darkMode} toggleTheme={toggleTheme} />
       <main>
-        {/* Hero Section */}
-        <section className="relative py-20 overflow-hidden">
+        <section
+          className="relative py-20 overflow-hidden"
+          data-testid="hero-section"
+        >
           <div
             className={`absolute inset-0 opacity-5 ${darkMode ? "bg-gray-900" : "bg-gray-50"}`}
           ></div>
@@ -35,8 +37,7 @@ export const Landing = () => {
           </div>
         </section>
 
-        {/* Main Tools Grid */}
-        <section id="tools" className="py-20">
+        <section id="tools" className="py-20" data-testid="all-tools-section">
           <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-4">All Conversion Tools</h2>
@@ -55,10 +56,10 @@ export const Landing = () => {
           </div>
         </section>
 
-        {/* About Us Section */}
         <section
           id="about"
           className={`py-20 ${darkMode ? "bg-gray-900" : "bg-gray-50"}`}
+          data-testid="about-section"
         >
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="text-4xl font-bold mb-8">About ConvertHub</h2>
@@ -83,8 +84,11 @@ export const Landing = () => {
           </div>
         </section>
 
-        {/* Most Popular Tools */}
-        <section id="popular" className="py-20">
+        <section
+          id="popular"
+          className="py-20"
+          data-testid="popular-tools-section"
+        >
           <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-4xl font-bold mb-4">Most Popular Tools</h2>
